@@ -1,10 +1,16 @@
-print "provide a multiplier number: "
-multiplier = gets.chomp.to_i
+def prompt(message)
+  print message
+  gets.chomp.to_i
+end
+
+multiplier = prompt("provide a multiplier number: ")
+from       = prompt("Enter range from: ")
+to         = prompt("Enter range to: ")
 
 puts "multiplier given is #{multiplier}"
 
-print "Enter range from: "
-from = gets.chomp.to_i
-
-print "Enter range to: "
-to = gets.chomp.to_i
+while from <= to do
+  result = multiplier * from
+  puts "#{multiplier} * #{from} = #{result}"
+  from += 1
+end
