@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + "./exercise.rb"
+require "./exercise.rb"
 
-class Exercise
+class Exercise01
 
   # this enable this ruby script to be run from the command output. Example - $> ruby collaboration.rb
   if __FILE__ == $PROGRAM_NAME
-    program = Exercise.new.main
+    program = Exercise01.new.main
   end
 
   def main
